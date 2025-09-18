@@ -4,7 +4,7 @@ By using const in certain function parameters I made sure that the value being p
 
 A reference is used when adding a student so that the size variable can be changed directly from the addStudent function.
 
-Static cast was used to change the double to an int safely.
+Static cast was used to change the double to an int safely. 
 
 When attempting to add students past capacity or calculating the average GPA for zero students I throw a string exception.
 

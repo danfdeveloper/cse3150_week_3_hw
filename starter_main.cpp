@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include <cstring>   // for strlen, strcpy
+#include <cstring> // for strlen, strcpy
 
 // TODO: function prototypes
 
@@ -12,19 +12,22 @@
 
 // TODO: implement averageGPA
 
-int main(int argc, char* argv[]) {
-    if (argc < 2) {
+int main(int argc, char *argv[])
+{
+    if (argc < 2)
+    {
         std::cout << "Usage: ./program <capacity>" << std::endl;
         return 1;
     }
 
     int capacity = std::stoi(argv[1]);
-    char* names[capacity];
+    char *names[capacity];
     double gpas[capacity];
     int size = 0;
 
     int choice;
-    do {
+    do
+    {
         std::cout << "Menu:\n";
         std::cout << "1. Add student\n";
         std::cout << "2. Update GPA\n";
@@ -34,30 +37,37 @@ int main(int argc, char* argv[]) {
         std::cout << "Enter choice: ";
         std::cin >> choice;
 
-        switch (choice) {
-            case 1: {
-                // TODO: implement menu logic
-                break;
-            }
-            case 2: {
-                // TODO: implement menu logic
-                break;
-            }
-            case 3: {
-                // TODO: implement menu logic
-                break;
-            }
-            case 4: {
-                // TODO: implement menu logic
-                break;
-            }
-            case 5: {
-                std::cout << "Goodbye!" << std::endl;
-                break;
-            }
-            default: {
-                std::cout << "Invalid choice" << std::endl;
-            }
+        switch (choice)
+        {
+        case 1:
+        {
+            // TODO: implement menu logic
+            break;
+        }
+        case 2:
+        {
+            // TODO: implement menu logic
+            break;
+        }
+        case 3:
+        {
+            // TODO: implement menu logic
+            break;
+        }
+        case 4:
+        {
+            // TODO: implement menu logic
+            break;
+        }
+        case 5:
+        {
+            std::cout << "Goodbye!" << std::endl;
+            break;
+        }
+        default:
+        {
+            std::cout << "Invalid choice" << std::endl;
+        }
         }
     } while (choice != 5);
 
