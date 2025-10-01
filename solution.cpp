@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstring> // for strlen, strcpy
 #include <string>
-#include "starter_main.h"
 
 // TODO: function prototypes
 void addStudent(char *name, double gpa, char *names[], double gpas[], int &size, int capacity);
